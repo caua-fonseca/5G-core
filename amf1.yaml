@@ -1,0 +1,44 @@
+logger:
+  file: /var/log/open5gs/amf1.log
+
+global:
+  max:
+    ue: 1024
+
+amf:
+  sbi:
+    - addr: 127.0.0.1
+      port: 7778
+
+  ngap:
+    - addr: 127.0.0.1
+      port: 38413
+
+  guami:
+    - plmn_id:
+        mcc: 001
+        mnc: 01
+      amf_id:
+        region: 2
+        set: 1
+
+  tai:
+    - plmn_id:
+        mcc: 001
+        mnc: 01
+      tac: 1
+
+  plmn_support:
+    - plmn_id:
+        mcc: 001
+        mnc: 01
+      s_nssai:
+        - sst: 1
+
+nrf:
+  sbi:
+    - addr: 127.0.0.1
+      port: 7777
+
+amf1.yaml.txt
+Exibindo amf1.yaml.txt.
