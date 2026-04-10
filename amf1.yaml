@@ -39,6 +39,3 @@ nrf:
   sbi:
     - addr: 127.0.0.1
       port: 7777
-
-amf1.yaml.txt
-Exibindo amf1.yaml.txt.
